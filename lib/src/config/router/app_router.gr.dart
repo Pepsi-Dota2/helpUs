@@ -8,16 +8,16 @@
 // coverage:ignore-file
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
+import 'package:app_fastfood/src/core/register/presentation/page/login.dart'
+    as _i4;
+import 'package:app_fastfood/src/core/register/presentation/page/signin.dart'
+    as _i5;
 import 'package:app_fastfood/src/feature/home/presentation%20/pages/home.dart'
     as _i3;
-import 'package:app_fastfood/src/feature/login/presentation%20/pages/login.dart'
-    as _i4;
 import 'package:app_fastfood/src/feature/presentapp/presentation%20/pages/present.dart'
     as _i2;
 import 'package:app_fastfood/src/feature/select_login_or_sigin/presentation%20/pages/present.dart'
     as _i1;
-import 'package:app_fastfood/src/feature/sigin/presentation%20/pages/signin.dart'
-    as _i5;
 import 'package:auto_route/auto_route.dart' as _i6;
 
 abstract class $AppRouter extends _i6.RootStackRouter {

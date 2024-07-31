@@ -1,4 +1,4 @@
-import 'package:app_fastfood/src/feature/sigin/presentation%20/widget/auth_file.dart';
+import 'package:app_fastfood/src/core/register/presentation/widget/signin/auth_file.dart';
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 
@@ -8,13 +8,11 @@ class SignInPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       appBar: AppBar(),
-      body: Column(
+      body: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          SignInWidget(title: "SignUp")
-        ],
+        children: [SignInWidget(title: "SignUp")],
       ),
     );
   }

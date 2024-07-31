@@ -9,8 +9,8 @@ import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:form_builder_validators/form_builder_validators.dart';
 import 'package:gap/gap.dart';
 
-class SignInWidget extends StatelessWidget {
-  const SignInWidget({super.key, required this.title});
+class LoginWidget extends StatelessWidget {
+  const LoginWidget({super.key, required this.title});
   final String? title;
 
   @override
@@ -44,24 +44,6 @@ class SignInWidget extends StatelessWidget {
             ),
             const Gap(15),
             CustomFormField(
-              name: 'Email',
-              label: "Email",
-              customColor: AppColors.black,
-              enable:
-                  const OutlineInputBorder(), // Replace with your custom border
-              focus:
-                  const OutlineInputBorder(), // Replace with your custom border
-              validators: [
-                FormBuilderValidators.required(
-                  errorText: 'Email cannot be empty',
-                ),
-                FormBuilderValidators.email(
-                  errorText: 'Please enter a valid email address',
-                ),
-              ],
-            ),
-            const Gap(15),
-            CustomFormField(
               name: 'Password',
               label: "Password",
               customColor: AppColors.black,
@@ -77,12 +59,12 @@ class SignInWidget extends StatelessWidget {
             ),
             const Gap(30),
             CustomButton(
+              height: 50,
               btColor: AppColors.blackBlue,
               onTab: () {
                 formKey.currentState?.saveAndValidate();
                 formKey.currentState?.validate();
-                // context.router.push();
-                
+                context.router.push(const HomeRoute());
               },
               text: title,
               color: AppColors.white,
